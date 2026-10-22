@@ -47,3 +47,11 @@ print("Top student:", course.top_student())
 
 # wrong file name
 load_course("Programming for AI", "mark.txt")
+
+c = Course("X"); c.add_student("Ali",88)
+c.remove_student("Ali")
+print(len(c))
+try:
+    c.remove_student("Zara")
+except KeyError as e:
+    print("KeyError:" , e)
